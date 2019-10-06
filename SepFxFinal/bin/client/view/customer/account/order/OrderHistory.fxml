@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.view.customer.account.order.OrderHistoryController">
+   <children>
+      <AnchorPane layoutX="7.0" prefHeight="500.0" prefWidth="601.0" style="-fx-background-color: #36384c;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="#fffdfde5" layoutX="203.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Orders" textAlignment="CENTER" wrappingWidth="195.98046875" AnchorPane.bottomAnchor="441.640625" AnchorPane.leftAnchor="203.0" AnchorPane.rightAnchor="201.01953125" AnchorPane.topAnchor="38.9140625">
+               <font>
+                  <Font name="Verdana Bold" size="16.0" />
+               </font>
+            </Text>
+            <Button mnemonicParsing="false" onMouseClicked="#back" prefHeight="26.0" prefWidth="32.0" style="-fx-background-color: #e3bab3;" text="&lt;" textFill="WHITE">
+               <font>
+                  <Font name="MS Gothic" size="22.0" />
+               </font>
+            </Button>
+            <Label fx:id="msgLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="462.0" prefHeight="17.0" prefWidth="600.0" textAlignment="CENTER" textFill="RED" underline="true" visible="false">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Label>
+            <TableView fx:id="orderTable" layoutX="1.0" layoutY="111.0" prefHeight="303.0" prefWidth="601.0" AnchorPane.bottomAnchor="86.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="111.0">
+               <columns>
+                  <TableColumn fx:id="idOrderCol" prefWidth="35.66668701171875" text="ID" />
+                  <TableColumn fx:id="DateCol" prefWidth="64.33334350585938" text="Date" />
+                  <TableColumn fx:id="delNameCol" prefWidth="159.66668701171875" text="Delivery Name" />
+                  <TableColumn fx:id="TotalPriceCol" prefWidth="104.33331298828125" text="Total Price" />
+                  <TableColumn fx:id="delFeeCol" prefWidth="109.0" text="Delivery Fee" />
+                  <TableColumn fx:id="deiveredCol" prefWidth="112.33331298828125" text="Delivered" />
+               </columns>
+            </TableView>
+            <Button fx:id="OrderDetail" layoutX="432.0" layoutY="450.0" mnemonicParsing="false" onMouseClicked="#showOrderDetail" prefHeight="25.0" prefWidth="135.0" text="Show Order Detail" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

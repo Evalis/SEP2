@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.view.customer.CustomerMainViewConroller">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #36384c;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TableView fx:id="itemsTable" layoutY="147.0" prefHeight="298.0" prefWidth="600.0">
+              <columns>
+                <TableColumn fx:id="idCol" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="nameCol" prefWidth="217.0" text="Name" />
+                  <TableColumn fx:id="qunatityCol" prefWidth="129.0" text="Qunatity" />
+                  <TableColumn fx:id="priceCol" prefWidth="165.0" text="Price" />
+              </columns>
+            </TableView>
+            <TextField fx:id="textField" layoutX="14.0" layoutY="105.0" prefHeight="25.0" prefWidth="467.0" />
+            <Button fx:id="search" layoutX="500.0" layoutY="105.0" mnemonicParsing="false" onMouseClicked="#search" prefHeight="25.0" prefWidth="73.0" text="Search" />
+            <Button layoutX="105.0" layoutY="461.0" mnemonicParsing="false" onMouseClicked="#addToBag" prefHeight="25.0" prefWidth="108.0" text="Add to Bag" />
+            <Button layoutX="231.0" layoutY="461.0" mnemonicParsing="false" onMouseClicked="#addToWishList" prefHeight="25.0" prefWidth="108.0" text="Add to WishList" />
+            <TextField fx:id="orderEntryQuantityField" layoutX="22.0" layoutY="461.0" prefHeight="25.0" prefWidth="63.0" />
+            <Text fill="WHITE" layoutX="431.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bag" wrappingWidth="28.999990224838257" AnchorPane.bottomAnchor="428.0" AnchorPane.leftAnchor="433.0" />
+            <Text fill="#f4f2f2" layoutX="41.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Account" AnchorPane.bottomAnchor="429.0" />
+            <ImageView fx:id="account" fitHeight="59.0" fitWidth="50.0" layoutX="48.0" layoutY="13.0" onMouseClicked="#showAccount" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="441.0">
+               <image>
+                  <Image url="@resources/account_circle_white_192x192.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="353.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Send Email" AnchorPane.bottomAnchor="428.0" AnchorPane.leftAnchor="353.0" />
+            <ImageView fx:id="wihlist" fitHeight="38.0" fitWidth="38.0" layoutX="481.0" layoutY="16.0" onMouseClicked="#showWishList" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="16.0">
+               <image>
+                  <Image url="@resources/heart.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="logout" fitHeight="38.0" fitWidth="38.0" layoutX="537.0" layoutY="18.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="16.0">
+               <image>
+                  <Image url="@resources/logout.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="537.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logout" AnchorPane.bottomAnchor="429.0" />
+            <ImageView fx:id="email" fitHeight="38.0" fitWidth="38.0" layoutX="363.0" layoutY="16.0" onMouseClicked="#showEmail" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="16.0">
+               <image>
+                  <Image url="@resources/en.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="478.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WishList" AnchorPane.bottomAnchor="428.0" />
+            <ImageView fx:id="bag" fitHeight="38.0" fitWidth="38.0" layoutX="426.0" layoutY="16.0" onMouseClicked="#showBag" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="422.0" AnchorPane.topAnchor="16.0">
+               <image>
+                  <Image url="@resources/bascet.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

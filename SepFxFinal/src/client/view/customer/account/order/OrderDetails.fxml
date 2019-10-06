@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.view.customer.account.order.OrderDetailsController">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="601.0" style="-fx-background-color: #36384c;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#back" prefHeight="26.0" prefWidth="32.0" style="-fx-background-color: #e3bab3;" text="&lt;" textFill="WHITE">
+               <font>
+                  <Font name="MS Gothic" size="22.0" />
+               </font>
+            </Button>
+            <TextField fx:id="orderId" layoutX="70.0" layoutY="27.0" AnchorPane.bottomAnchor="448.0" />
+            <Text fill="#f6f6f6" layoutX="70.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OrderID" wrappingWidth="77.47006225585938" />
+            <TextField fx:id="deliveryName" layoutX="70.0" layoutY="84.0" prefHeight="25.0" prefWidth="149.0" AnchorPane.bottomAnchor="391.0" />
+            <Text fill="#f6f6f6" layoutX="70.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery Name" wrappingWidth="112.80337524414062" />
+            <TextField fx:id="Date" layoutX="253.0" layoutY="27.0" AnchorPane.bottomAnchor="448.0" />
+            <Text fill="#f6f6f6" layoutX="253.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="77.47006225585938" />
+            <TextField fx:id="totalPrice" layoutX="438.0" layoutY="27.0" AnchorPane.bottomAnchor="448.0" />
+            <Text fill="#f6f6f6" layoutX="438.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Price" wrappingWidth="77.47006225585938" />
+            <Text fill="#f6f6f6" layoutX="253.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Street" wrappingWidth="112.80337524414062" />
+            <TextField fx:id="Streer" layoutX="253.0" layoutY="84.0" prefHeight="25.0" prefWidth="149.0" AnchorPane.bottomAnchor="391.0" />
+            <TextField fx:id="houseNo" layoutX="438.0" layoutY="84.0" prefHeight="25.0" prefWidth="149.0" AnchorPane.bottomAnchor="391.0" />
+            <Text fill="#f6f6f6" layoutX="438.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="House No" wrappingWidth="112.80337524414062" />
+            <Text fill="#f6f6f6" layoutX="70.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City" wrappingWidth="112.80337524414062" />
+            <TextField fx:id="City" layoutX="70.0" layoutY="133.0" prefHeight="25.0" prefWidth="149.0" AnchorPane.bottomAnchor="342.0" />
+            <Text fill="#f6f6f6" layoutX="438.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country" wrappingWidth="112.80337524414062" />
+            <TextField fx:id="country" layoutX="438.0" layoutY="133.0" prefHeight="25.0" prefWidth="149.0" AnchorPane.bottomAnchor="342.0" />
+            <Text fill="#f6f6f6" layoutX="253.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Postcode" wrappingWidth="112.80337524414062" />
+            <TextField fx:id="postcode" layoutX="253.0" layoutY="133.0" prefHeight="25.0" prefWidth="149.0" AnchorPane.bottomAnchor="342.0" />
+            <TableView fx:id="orderEntryTable" layoutY="181.0" prefHeight="319.0" prefWidth="600.0">
+               <columns>
+                  <TableColumn fx:id="idCol" prefWidth="63.0" text="ID" />
+                  <TableColumn fx:id="nameCol" prefWidth="321.0" text="Name" />
+                  <TableColumn fx:id="qunatityCol" minWidth="0.0" prefWidth="65.66668701171875" text="Qunatity" />
+                  <TableColumn fx:id="priceCol" minWidth="9.66668701171875" prefWidth="149.0" text="Price" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
